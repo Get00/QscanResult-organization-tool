@@ -7,4 +7,4 @@
 # 写在最后
   希望各位师傅们在使用过程中出现的问题都留言到GitHub当中，会聆听大家的建议，将工具做的更加完善，也希望大家保持开源精神，让大家都用上好用且好评的开源工具
 # Star
-[![Stargazers over time]([https://starchart.cc/teamdArk5/FscanParser.svg?variant=adaptive](https://starchart.cc/Get00/QscanResult-organization-tool))](https://starchart.cc/teamdArk5/FscanParser)
+[![Star Fork History](https://starchart.cc/Get00/QscanResult-organization-tool.svg)](https://starchart.cc/liulilittle/openppp2)
