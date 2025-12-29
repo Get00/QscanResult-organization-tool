@@ -1,10 +1,58 @@
-# QscanResult-organization-tool
-  专为Qscan打造的结果输出工具，Qscan是一款速度极快的内网扫描器，具备端口扫描、协议检测、指纹识别，暴力破解，漏洞探测等功能。支持协议1200+，协议指纹10000+，应用指纹20000+，暴力破解协议10余种。但是在结果输出或者是文件输出会比较杂乱，故对其编写了一款结果输出整理工具方便输出结果的可观性
-# 版本支持
-  目前为初步开发版本，还要许多功能暂未加入（因为还没有相关数据），待有相关数据后会再进行下一版本的开发
-# Java与Python的开发
-  目前还在尝试Java与Python两个版本的开发，通过一段时间的对比后，会选择一款更适合大众的快速启动的代码进行主要编写，会舍弃另一款代码
-# 写在最后
-  希望各位师傅们在使用过程中出现的问题都留言到GitHub当中，会聆听大家的建议，将工具做的更加完善，也希望大家保持开源精神，让大家都用上好用且好评的开源工具
-# ⭐ Star & Fork 历史
-[![Stargazers over time](https://starchart.cc/Get00/QscanResult-organization-tool.svg?variant=adaptive)](https://starchart.cc/Get00/QscanResult-organization-tool)
+# Qscan结果解析工具
+
+这是一个用于解析和可视化展示qscan扫描结果的GUI工具，支持多种格式的扫描结果文件。
+
+## 功能特点
+
+- **多格式支持**：支持JSON、TXT、CSV格式的qscan扫描结果文件
+- **双标签页界面**：
+  - 总览：显示所有扫描结果
+  - 弱口令：专门显示识别出的弱口令信息
+- **智能过滤**：支持按服务类型和关键词搜索过滤
+- **弱口令识别**：自动识别并提取包含弱口令的扫描结果
+
+## 界面说明
+
+### 总览标签页
+- 显示所有扫描结果
+- 包含URL、服务、关键词、IP、端口、长度、操作系统等信息
+- 支持搜索和按服务类型过滤
+
+### 弱口令标签页
+- 专门显示识别出的弱口令结果
+- 包含URL、服务、用户名、密码、其他信息等字段
+- 便于快速查看和管理弱口令信息
+
+## 使用方法
+
+1. 点击"选择扫描结果文件"按钮加载qscan扫描结果
+2. 选择文件类型（自动检测或手动指定）
+3. 在总览标签页查看所有扫描结果
+4. 切换到弱口令标签页查看识别出的弱口令信息
+5. 使用搜索框和过滤器筛选结果
+
+## 弱口令识别
+
+工具会自动识别包含以下关键词的结果：
+- `CrackSuccess`
+- `crack`（不区分大小写）
+- 包含用户名、密码、SID等字段的结果
+
+例如：`oracle://50.0.191.122:1521     CrackSuccess               Username:HR,Password:HR,SID:orcl,Length:0`
+
+## 系统要求
+
+- Python 3.6 或更高版本
+- tkinter（Python标准库）
+- json（Python标准库）
+- csv（Python标准库）
+- re（Python标准库）
+
+## 打包为exe
+
+如果需要将此工具打包为exe文件，可以使用PyInstaller：
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed --name=QscanParserGUI qscan_parser_gui.py
+```
