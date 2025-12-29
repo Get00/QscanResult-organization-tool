@@ -38,8 +38,6 @@
 - `crack`（不区分大小写）
 - 包含用户名、密码、SID等字段的结果
 
-例如：`oracle://50.0.191.122:1521     CrackSuccess               Username:HR,Password:HR,SID:orcl,Length:0`
-
 ## 系统要求
 
 - Python 3.6 或更高版本
