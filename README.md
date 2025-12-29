@@ -6,3 +6,5 @@
   目前还在尝试Java与Python两个版本的开发，通过一段时间的对比后，会选择一款更适合大众的快速启动的代码进行主要编写，会舍弃另一款代码
 # 写在最后
   希望各位师傅们在使用过程中出现的问题都留言到GitHub当中，会聆听大家的建议，将工具做的更加完善，也希望大家保持开源精神，让大家都用上好用且好评的开源工具
+# Star
+[![Stargazers over time]([https://starchart.cc/teamdArk5/FscanParser.svg?variant=adaptive](https://starchart.cc/Get00/QscanResult-organization-tool))](https://starchart.cc/teamdArk5/FscanParser)
